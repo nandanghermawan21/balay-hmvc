@@ -55,7 +55,7 @@ $route['default_controller'] = 'home/Frontend';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['frontend/([a-z]+)'] = '$1/frontend';
+$route['frontend/(:any)'] = '$1/frontend';
 
 $route['frontend/(:any)/(:any)/(:any)'] = '$1/frontend/$2/$3';
 

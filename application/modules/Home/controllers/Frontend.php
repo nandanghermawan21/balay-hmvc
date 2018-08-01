@@ -54,33 +54,7 @@ class Frontend extends Front_Controller
         $this->frontend($data, 'frontend/home');
     }
 
-    /**
-    * Detail Article
-    * @param str slug
-    */
-    public function read($slug = null)
-    {
-        $article = $this->Home_model->fetchDetail($slug);
 
-        //show 404 if no article found
-        if (!$article) {
-            show_404();
-        }
-
-        /**
-        * meta data to send to the View.
-        * add anything you want here
-        */
-        $data = [
-            'meta' => [
-                'title' => $article['title'],
-                'Description' => trim(word_limiter(strip_tags($article['content']), 100))
-            ],
-            'article' => $article
-        ];
-
-        $this->frontend($data, 'frontend/read');
-    }
 
     private function _create_pagination($link, $limit, $total_rows)
     {

@@ -40,6 +40,8 @@ $config['base_url'] = 'http://localhost:7777/BALAY-HMVC';
 |
 */
 $config['index_page'] = '';
+$config['frontend_layout'] = 'balay';
+$config['backend_layout'] = '';
 
 /*
 |--------------------------------------------------------------------------
