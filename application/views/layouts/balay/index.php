@@ -21,10 +21,11 @@
             <label>Reliability</label>
             <label>Performance</label>
             <ul style="margin-top: 50px">
-                <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                <li><a href="#"><i class="icon-instagram"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                <li><i class=""></i></li>
+                <li><i class=""></i></li>
+                <li><i class=""></i></li>
+                <li><i class=""></i></li>
+
             </ul>
         </div>
 
