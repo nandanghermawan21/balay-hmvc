@@ -82,10 +82,10 @@ $pass_default = '';
 
 $db['default'] = array(
 	'dsn' => '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'explorindo',
-	'database' => 'tess',
+	'hostname' => 'mysql.hostinger.com',
+	'username' => 'u894213658_root',
+	'password' => 'h3rm4w4n',
+	'database' => 'u894213658_tess',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

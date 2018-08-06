@@ -41,6 +41,7 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="<?php load_asset("balay/css/style.css") ?>">
 
+
     <!-- Modernizr JS -->
     <script src="<?php load_asset("balay/js/modernizr-2.6.2.min.js") ?>"></script>
     <!-- FOR IE9 below -->
@@ -48,5 +49,6 @@
     <script src="<?php load_asset("balay/js/respond.min.js") ?>"></script>
     <!--[endif]-->
 
+    <link rel="stylesheet" href="<?php load_asset("balay/css/style-custom.css") ?>">
 </head>
 <?php $this->load->view("layouts/balay/index"); ?>

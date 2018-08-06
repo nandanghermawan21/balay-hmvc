@@ -53,7 +53,20 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+switch ($_SERVER['HTTP_HOST']) {
+    case "localhost:7777" :
+        $environment = "development";
+        break;
+    case "http://indotekno.16mb.com" :
+        $environment = "production";
+        break;
+    case "data.explorindo.co.id:85" :
+        $environment = "tester";
+        break;
+    default :
+        $environment = "production";
+}
+define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : $environment);
 
 /*
  *---------------------------------------------------------------
@@ -72,7 +85,7 @@ switch (ENVIRONMENT)
 
 	case 'testing':
 	case 'production':
-		ini_set('display_errors', 0);
+		ini_set('display_errors', 1);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
 		{
 			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);

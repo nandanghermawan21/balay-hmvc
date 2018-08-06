@@ -1,0 +1,136 @@
+.colorlib-nav-toggle {
+    padding-top: 10px;
+}
+
+.navbar {
+    width: 80%;
+}
+
+.main-content {
+    margin-top: 58px;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+
+        margin-left: -15px;
+        display: none;
+
+    }
+
+    .navbar-nav {
+
+        float: none;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: -moz-max-content;
+
+    }
+
+    .navbar {
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-nav > li {
+        /*border-bottom: solid;*/
+    }
+
+    .navbar-nav {
+        float: none;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: -moz-max-content;
+        background-color: #f7f7f7e6;
+        /*border-radius: 0px 0px 15px 5px;*/
+    }
+
+     .main-content {
+        margin-top: 0px;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        color: #87c330;
+        background-color: transparent;
+        border-bottom: solid;
+        /*font-style: oblique;*/
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        width: 100%;
+    }
+
+}
+
+.navbar-brand {
+
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+.navbar-toggle {
+    z-index: 9999;
+}
+
+.navbar-brand > img {
+
+    display: block;
+    width: auto;
+    height: 100%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.page-menu-active{
+    color: #87c330 !important;
+    background-color: transparent;
+    border-bottom: solid;
+}
+
+.container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x: auto !important;
+}
+
+
+.product a{
+    color: #0e3763 !important;
+}
+
+.product a:hover{
+    color: green !important;
+    border-bottom: #ffc300  solid 1px;
+}
+
+.link-breadcumb a{
+    color: #0e3763 !important;
+}
+
+.link-breadcumb a:hover{
+    color: green !important;
+    border-bottom: #ffc300  solid 1px;
+}
+
+.services-wrap .desc {
+    position: absolute;
+}

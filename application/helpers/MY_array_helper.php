@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 /**
-* overriding the original function
-* @author budy k <budykusniadi@gmail.com>
-*/
+ * overriding the original function
+ * @author budy k <budykusniadi@gmail.com>
+ */
 /**
  * Element
  *
@@ -18,8 +18,8 @@ function element($item, $array = [], $default = null)
 {
     //adding trim - updated by budy
     if (!is_array($array)) {
-		return null;
-	}
+        return null;
+    }
 
     if (array_key_exists($item, $array)) {
         $return = $array[$item];
@@ -28,8 +28,26 @@ function element($item, $array = [], $default = null)
             $return = trim($return);
         }
         return $return;
-    }
-    else {
+    } else {
         return (!is_array($default)) ? trim($default) : $default;
     }
+}
+
+function castObjectFromArray($array, $object)
+{
+    $retObject = $object;
+
+    $varObject = array();
+
+
+    $varObject = get_object_vars($object);
+
+
+    foreach ($varObject as $key => $type) {
+        if (array_key_exists($key, $array)) {
+            $retObject->{$key} = $array[$key];
+        }
+    }
+
+    return $retObject;
 }

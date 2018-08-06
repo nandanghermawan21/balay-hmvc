@@ -14,6 +14,7 @@ class Frontend extends Front_Controller
     public function __construct()
     {
         parent::__construct();
+        LayoutFactory::Instance()->setSelectedMenu("3");
     }
 
     /**

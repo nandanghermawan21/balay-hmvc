@@ -1,3 +1,7 @@
+<?php foreach (Pagefactory::Instance()->getAllContent() as $content) { ?>
+    <?php /** @var $content Content */ ?>
+    <?php get_instance()->load->view($content->getView(), array("data" => $content)); ?>
+<?php } ?>
 <div id="get-in-touch" class="colorlib-bg-color">
     <div class="colorlib-narrow-content">
         <div class="row">
@@ -41,3 +45,5 @@
 
 <!-- MAIN JS -->
 <script src="<?php load_asset("balay/js/main.js") ?>"></script>
+
+<script src="<?php load_asset("balay/js/custom.js") ?>"></script>
